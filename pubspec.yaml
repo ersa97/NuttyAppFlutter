@@ -8,13 +8,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  splashscreen:
   firebase_auth: ^0.14.0+5
+  toast: ^0.1.5
 
 cupertino_icons: ^0.1.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.7.3"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/NUTTY LOGO.png"
 
 flutter:
 
