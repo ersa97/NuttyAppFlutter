@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:test_flutter/Pages/home.dart';
+import 'package:test_flutter/Pages/activityList.dart';
 
 class LoginPage extends StatefulWidget {
 
@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
         FirebaseUser user = (await _auth.signInWithEmailAndPassword
           (email: _email, password: _password)).user;
             Navigator.push(
-                context, MaterialPageRoute(builder: (context)=>Home()));
+                context, MaterialPageRoute(builder: (context)=>ActivityList()));
       }catch(e){
         print(e.message);
       }
